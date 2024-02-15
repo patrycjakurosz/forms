@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1>Forms</h1>
+      <form>
+        <p>
+          <label for="firstName">Your name:</label>
+          <input placeholder="Please enter your name" type="text" id="firstName" name="firstName"/>
+        </p>
+        <p>
+          <label for="lastName"> Your last name:</label>
+          <input placeholder="Please enter your last name" type="text" id="lastName" name="lastName"/>
+        </p>
+        <fieldset>
+          <legend>Address data:</legend>
+          <p>
+            <label for="city"> City:</label>
+            <input placeholder="Please enter your city" type="text" id="city" name="city"/>
+          </p>
+          <p>
+            <label for="street"> Street:</label>
+            <input placeholder="Please enter your street" type="text" id="street" name="street"/>
+          </p>
+        </fieldset>
+        <fieldset>
+            <legend>Your favorite fruits:</legend>
+            <p>
+                <label><input checked name="fruit" type="checkbox" value="apple"/> Apple</label>
+            </p>
+            <p>
+                <label><input name="fruit" type="checkbox" value="banana"/> Banana</label>
+            </p>
+            <p>
+                <label><input name="fruit" type="checkbox" value="pear"/> Pear</label>
+            </p>
+            <p>
+                <label><input name="fruit" type="checkbox" value="grapes"/> Grapes</label>
+            </p>
+            <p>
+                <label><input name="fruit" type="checkbox" value="strawberry"/> Strawberry</label>
+            </p>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
