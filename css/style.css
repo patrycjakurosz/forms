@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+    
+}
+body {
+    background-color:rgb(167, 167, 235);
+    padding: 4rem;
+}
+.form {
+    color: black;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.label {
+    display: block;
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+textarea {
+    width: 50%;
+    min-height: 10rem;
+}

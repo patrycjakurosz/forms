@@ -6,49 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <main>
-      <h1>Forms</h1>
-      <form>
+      <header class="header">
+        <h1 class="header__h1">Forms</h1>
+      </header>
+      <form class="form" action="https://forms.cotenfrontend.pl" method="post">
         <p>
-          <label for="firstName">Your name:</label>
-          <input placeholder="Please enter your name" type="text" id="firstName" name="firstName"/>
+          <label class="label" for="name">Your name:</label>
+          <input
+            placeholder="Please enter your name"
+            type="text"
+            id="name"
+            name="name" />
         </p>
         <p>
-          <label for="lastName"> Your last name:</label>
-          <input placeholder="Please enter your last name" type="text" id="lastName" name="lastName"/>
+          <label class="label" for="riddle">Riddle</label>
+          <input id="riddle" name="riddle" value="cotenfrontend" />
+        </p>
+        <p>
+          <label class="label" for="lastName">Your last name:</label>
+          <input
+            placeholder="Please enter your last name"
+            type="text"
+            id="lastName"
+            name="lastName" />
+        </p>
+        <p>
+          <label class="label" for="addFile">Add file</label>
+          <input type="file" id="addFile" name="addFile" />
+        </p>
+        <p>
+          <label class="label" for="size">Choose your size</label>
+          <select id="size" name="size">
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option selected value="xl">XL</option>
+          </select>
         </p>
         <fieldset>
           <legend>Address data:</legend>
           <p>
-            <label for="city"> City:</label>
-            <input placeholder="Please enter your city" type="text" id="city" name="city"/>
+            <label class="label" for="city">City:</label>
+            <input
+              placeholder="Please enter your city"
+              type="text"
+              id="city"
+              name="city" />
           </p>
           <p>
-            <label for="street"> Street:</label>
-            <input placeholder="Please enter your street" type="text" id="street" name="street"/>
+            <label class="label" for="street">Street:</label>
+            <input
+              placeholder="Please enter your street"
+              type="text"
+              id="street"
+              name="street" />
+          </p>
+          <p>
+            <label class="label" for="phone">Phone number:</label>
+            <input
+              placeholder="Please enter your phone number"
+              type="tel"
+              id="phone"
+              name="phone" />
+          </p>
+          <p>
+            <label class="label" for="email">Email:</label>
+            <input
+              placeholder="Please enter your e-mail address"
+              type="email"
+              id="email"
+              name="email" />
           </p>
         </fieldset>
         <fieldset>
-            <legend>Your favorite fruits:</legend>
-            <p>
-                <label><input checked name="fruit" type="checkbox" value="apple"/> Apple</label>
-            </p>
-            <p>
-                <label><input name="fruit" type="checkbox" value="banana"/> Banana</label>
-            </p>
-            <p>
-                <label><input name="fruit" type="checkbox" value="pear"/> Pear</label>
-            </p>
-            <p>
-                <label><input name="fruit" type="checkbox" value="grapes"/> Grapes</label>
-            </p>
-            <p>
-                <label><input name="fruit" type="checkbox" value="strawberry"/> Strawberry</label>
-            </p>
+          <legend>Your favourite fruits:</legend>
+          <p>
+            <label>
+              <input checked name="fruit" type="checkbox" value="apple" />
+              Apple
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="fruit" type="checkbox" value="banana" />
+              Banana
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="fruit" type="checkbox" value="pear" />
+              Pear
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="fruit" type="checkbox" value="grapes" />
+              Grapes
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="fruit" type="checkbox" value="strawberry" />
+              Strawberry
+            </label>
+          </p>
         </fieldset>
+        <p>
+          <label class="label" for="comment">Add comment</label>
+          <textarea
+            id="comment"
+            placeholder="Add your comment"
+            comment></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Send" />
+        </p>
       </form>
     </main>
   </body>
